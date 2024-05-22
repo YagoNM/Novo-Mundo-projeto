@@ -1,21 +1,77 @@
- * {
-    font-family: 'Roboto';
- }
-
- #navbar img {
-   width: 50px;
- }
-
- #navbar {
-  justify-content: center;
-  background-color: aqua;
-  padding: 5px 0;
- }
-
- header {
+header {
   width: 100%;
-  background-color: #00FFFF; /* Cor de fundo da navbar */
+  background-color: #ffffff; /* Cor de fundo da navbar */
  }
+
+ * {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+.buttonContainer {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  top: -45px;
+}
+
+.buttonContainer a {
+  text-decoration: none;
+}
+
+.header-button1 {
+  display: flex;
+  background-color: #0BE1E6;
+  width: 140px;
+  height: 60px;
+  border: none;
+  border-radius: 30px;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: "Nerko One", cursive;
+  font-size: 30px;
+  margin-left: 20px;
+}
+
+.header-button1:hover {
+  transition: 0.2s;
+  background-color: #C1FF72;
+  color: black;
+}
+
+.barraPosition {
+  display: flex;
+  position: absolute;
+  left: 40%;
+  top: 4%;
+}
+
+.barraPesquisa {
+  height: 50px;
+  width: 400px;
+  background-color: #E4E4E4;
+  border-radius: 30px;
+  border: 2px solid #FFD100;
+  text-align: left;
+  font-size: 1rem;
+  padding: 0 20px;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+'FILL' 0,
+'wght' 400,
+'GRAD' 0,
+'opsz' 24;
+  color: #757575;
+  position: absolute;
+  left: 90%;
+  top: 12px;
+}
 
 /* footer */
 

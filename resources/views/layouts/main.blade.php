@@ -3,42 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    
     <title>@yield('title')</title>
-
-    <!-- Fonte do Google -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto" rel="stylesheet">
-
-    <!-- CSS Bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" 
-    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-
-    <!-- CSS da aplicação -->
-    <link rel="stylesheet" href="/css/styles.css">
-    <script src="/js/scripts.js"></script>
-
 </head>
-    <body>
-        <header>
-            <nav class="navbar navbar-expand-lg navbar-light">
-                <div class="collapse navbar-collapse" id="navbar">
-                    <a href="/" class="navbar-brand">
-                        <img src="/img/nm_logo.png" alt="Novo Mundo">
-                    </a>
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a href="/" class="nav-link">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="/games" class="nav-link">Jogos</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </header>
-        @yield('content')
-        <footer>
-            <p>Novo Mundo &copy; 2024</p>
-        </footer>
-    </body>
+<body>
+    <header>
+        
+        <img src="/img/nm_logo.png" style="width: 150px; position: relative; left: 120px;">
+
+        <form class="barraPosition">
+            <input class="barraPesquisa" type="search" placeholder="Pesquise aqui...">
+            <span class="material-symbols-outlined">
+                search
+            </span>
+        </form>
+
+        <hr style="background-color: #0BE1E6; padding: 15px; border: none;">
+
+        <div class="buttonContainer">
+            <a href="/">
+                <button class="header-button1">HOME</button>
+            </a>
+            <a href="/games">
+                <button class="header-button1">JOGOS</button>
+            </a> 
+        </div>
+
+
+    </header>
+    @yield('content')
+
+    <main>
+    </main>
+
+    <footer>
+        <p>Novo Mundo &copy; 2024</p>
+    </footer>
+</body>
 </html>
