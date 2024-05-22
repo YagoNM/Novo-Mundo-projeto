@@ -37,10 +37,6 @@
 
     </header>
     @yield('content')
-
-    <main>
-    </main>
-
     <footer>
         <p>Novo Mundo &copy; 2024</p>
     </footer>

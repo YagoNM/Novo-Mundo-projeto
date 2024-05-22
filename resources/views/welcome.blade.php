@@ -6,6 +6,8 @@
 
 <h1>Seja bem vindo!</h1>
 
-
+@foreach($games as $game)
+    <p>{{ $game -> name}}</p>
+@endforeach
 
 @endsection
