@@ -18,11 +18,27 @@
     <script src="/js/scripts.js"></script>
 
 </head>
-<body>
-
-    @yield('content')
-    <footer>
-        <p>Novo Mundo &copy; 2024</p>
-    </footer>
-</body>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="collapse navbar-collapse" id="navbar">
+                    <a href="/" class="navbar-brand">
+                        <img src="/img/nm_logo.png" alt="Novo Mundo">
+                    </a>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="/" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/games" class="nav-link">Jogos</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        @yield('content')
+        <footer>
+            <p>Novo Mundo &copy; 2024</p>
+        </footer>
+    </body>
 </html>

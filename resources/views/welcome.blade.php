@@ -4,7 +4,7 @@
 
 @section('content')
 
-<h1>Alguma coisa</h1>
+<h1>Seja bem vindo!</h1>
 
 
 

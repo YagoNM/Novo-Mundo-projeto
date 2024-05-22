@@ -1,3 +1,31 @@
  * {
     font-family: 'Roboto';
  }
+
+ #navbar img {
+   width: 50px;
+ }
+
+ #navbar {
+  justify-content: center;
+  background-color: aqua;
+  padding: 5px 0;
+ }
+
+ header {
+  width: 100%;
+  background-color: #00FFFF; /* Cor de fundo da navbar */
+ }
+
+/* footer */
+
+ footer {
+  text-align: center;
+  background-color: #ffffff; /* Cor de fundo */
+  color: #000000; /* Cor da fonte */
+  padding: 20px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+ }
+ 

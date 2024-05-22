@@ -1,11 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\GameController;
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
-Route::get('/main', function () {
-    return view('main');
-});
+Route::get('/', [GameController::class, 'index']);
+Route::get('/games', [GameController::class, 'games']);
