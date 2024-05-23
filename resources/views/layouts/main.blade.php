@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     
-    <title>@yield('title')</title>
+    <title>@yield('title')</title> <!-- Define o título da página -->
 </head>
 <body>
     <header>
@@ -36,7 +36,7 @@
 
 
     </header>
-    @yield('content')
+    @yield('content') <!-- Aqui é onde o conteúdo específico da página será inserido -->
     <footer>
         <p>Novo Mundo &copy; 2024</p>
     </footer>

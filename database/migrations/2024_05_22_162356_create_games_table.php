@@ -7,10 +7,11 @@ use Illuminate\Support\Facades\Schema;
 return new class extends Migration
 {
     /**
-     * Run the migrations.
+     * Executa as migrações.
      */
     public function up(): void
     {
+        // Cria a tabela 'games' no banco de dados
         Schema::create('games', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
@@ -23,10 +24,11 @@ return new class extends Migration
     }
 
     /**
-     * Reverse the migrations.
+     * Reverte as migrações.
      */
     public function down(): void
     {
+        // Remove a tabela 'games' do banco de dados
         Schema::dropIfExists('games');
     }
 };

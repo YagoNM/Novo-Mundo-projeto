@@ -1,48 +1,53 @@
 header {
-  width: 100%;
-  background-color: #ffffff; /* Cor de fundo da navbar */
- }
-
- * {
-  padding: 0%;
-  margin: 0%;
-  box-sizing: border-box;
+  width: 100%; /* Largura total */
+  background-color: #ffffff; /* Cor de fundo da barra de navegação */
 }
 
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box; /* Define a modelagem da caixa como 'border-box' para incluir padding e border no width/height */
+}
+
+/* Estilos para o contêiner dos botões */
 .buttonContainer {
   display: flex;
   position: relative;
   justify-content: center;
   align-items: center;
   margin: 0;
-  top: -45px;
+  top: -45px; /* Desloca 45px para cima */
 }
 
+/* Estilos para links dentro do contêiner de botões */
 .buttonContainer a {
-  text-decoration: none;
+  text-decoration: none; /* Remove decoração de texto (sublinhado) */
 }
 
+/* Estilos para o primeiro botão de cabeçalho */
 .header-button1 {
   display: flex;
   background-color: #0BE1E6;
   width: 140px;
   height: 60px;
   border: none;
-  border-radius: 30px;
-  justify-content: center;
-  align-items: center;
+  border-radius: 30px; /* Borda arredondada */
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
   color: white;
   font-family: "Nerko One", cursive;
   font-size: 30px;
   margin-left: 20px;
 }
 
+/* Efeito hover para o primeiro botão de cabeçalho */
 .header-button1:hover {
-  transition: 0.2s;
+  transition: 0.2s; /* Transição suave */
   background-color: #C1FF72;
   color: black;
 }
 
+/* Estilos para a barra de pesquisa */
 .barraPosition {
   display: flex;
   position: absolute;
@@ -54,34 +59,29 @@ header {
   height: 50px;
   width: 400px;
   background-color: #E4E4E4;
-  border-radius: 30px;
-  border: 2px solid #FFD100;
+  border-radius: 30px; /* Borda arredondada */
+  border: 2px solid #FFD100; /* Borda sólida */
   text-align: left;
   font-size: 1rem;
   padding: 0 20px;
 }
 
+/* Define o estilo do ícone */
 .material-symbols-outlined {
-  font-variation-settings:
-'FILL' 0,
-'wght' 400,
-'GRAD' 0,
-'opsz' 24;
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
   color: #757575;
   position: absolute;
   left: 90%;
   top: 12px;
 }
 
-/* footer */
-
- footer {
+/* Estilos para o footer */
+footer {
   text-align: center;
-  background-color: #ffffff; /* Cor de fundo */
-  color: #000000; /* Cor da fonte */
+  background-color: #ffffff;
+  color: #000000;
   padding: 20px;
   position: absolute;
   bottom: 0;
   width: 100%;
- }
- 
+}
