@@ -13,19 +13,21 @@
 </head>
 <body>
     <header>
-        
-        <img src="/img/nm_logo.png" style="width: 150px; position: relative; left: 120px;">
+        <div class="positionHeader">
+            <img src="/img/nm_logo.png" class="logo_NovoMundo">
 
-        <form class="barraPosition">
-            <input class="barraPesquisa" type="search" placeholder="Pesquise aqui...">
-            <span class="material-symbols-outlined">
-                search
-            </span>
-        </form>
+            <form class="barraPosition">
+                <input class="barraPesquisa" type="search" placeholder="Pesquise aqui...">
+                <span class="material-symbols-outlined">
+                    search
+                </span>
+            </form>
+        </div> 
 
-        <hr style="background-color: #0BE1E6; padding: 15px; border: none;">
-
+    </header>
+    <hr class="buttonBarra">
         <div class="buttonContainer">
+
             <a href="/">
                 <button class="header-button1">HOME</button>
             </a>
@@ -35,7 +37,7 @@
         </div>
 
 
-    </header>
+
     @yield('content') <!-- Aqui é onde o conteúdo específico da página será inserido -->
     <footer>
         <p>Novo Mundo &copy; 2024</p>
