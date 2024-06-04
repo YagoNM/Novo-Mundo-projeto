@@ -103,19 +103,36 @@ header .positionHeader .barraPosition .barraPesquisa {
   color: black;
 }
 
-.cards-container{
-  background-color: #333;
-  border: 3px solid red;
-  padding: 15px;
-  display: grid;
-  grid-template-columns: auto auto auto;
-  height: 35vh;
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.cards-container div {
+.content .head-titleContent {
+  position: relative;
+  width: fit-content;
+  font-family: "Nerko One", cursive;
+  color: #a1a29d;
+  top: -1.5rem;
+  font-size: 2.5rem;
+}
+
+.content .cards-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  height: 100%;
+  max-width: 100%;
+}
+
+.content .cards-container .game-card {
   background-color: #CCC;
-  padding: 20px;
-  border: 1px solid blue;
+  width: 140px;
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Estilos para o footer */
@@ -124,7 +141,7 @@ footer {
   background-color: #ffffff;
   color: #000000;
   padding: 20px;
-  position: absolute;
+  position: block;
   bottom: 0;
   width: 100%;
 }
@@ -138,5 +155,23 @@ footer {
   header .logo_NovoMundo {
     display: block;
     width: 9.375rem;
+  }
+  .content .cards-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .content .cards-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .content .head-titleContent {
+    font-size: 1.5rem;
+  }
+  .content .cards-container {
+    grid-template-columns: repeat(1, 1fr);
   }
 }

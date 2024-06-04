@@ -35,10 +35,9 @@
                 <button class="header-button1">JOGOS</button>
             </a> 
         </div>
-
-
-
+    <section class="content">
     @yield('content') <!-- Aqui é onde o conteúdo específico da página será inserido -->
+    </section>
     <footer>
         <p>Novo Mundo &copy; 2024</p>
     </footer>
