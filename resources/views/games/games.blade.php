@@ -6,35 +6,15 @@
 
 <h1 class="head-titleContent">Escolha e se divirta!</h1>
 
-    <div class="cards-container">
-        <div class="game-card">
-            1
-        </div>
-        <div class="game-card">
-            2
-        </div>
-        <div class="game-card">
-            3
-        </div>
-        <div class="game-card">
-            4
-        </div>
-        <div class="game-card">
-            5
-        </div>
-        <div class="game-card">
-            6
-        </div>
-        <div class="game-card">
-            7
-        </div>
-        <div class="game-card">
-            8
-        </div>
-    </div>
-
-@foreach($games as $game) <!-- Loop que itera sobre a variável $games -->
-    <p>{{ $game->name }}</p> <!-- Exibe o nome de cada jogo -->
-@endforeach
+    <div id="cards-container" class="cards-container">
+        @foreach($games as $game) <!-- Loop que itera sobre a variável $games -->
+            <div class="game-card col-md-3">
+                <img src="/img/OIP.jpeg" alt="{{ $game->name }}">
+                <div class="card-body">
+                    <h5 class="card-name">{{ $game->name }}</h5>
+                    <a href="#" class="btn-jogar">Jogar</a>
+                </div>
+            </div>
+        @endforeach
 
 @endsection
